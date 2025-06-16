@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinasi Gunung Gede - Gunung Bogor</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">RB Adventure</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link active">Destinasi <i class="fas fa-chevron-down fa-xs"></i></a>
+                        <div class="dropdown-content">
+                            <a href="gunung-gede.html">Gunung Gede</a>
+                            <a href="gunung-pangrango.html">Gunung Pangrango</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="alat.html" class="nav-link">Alat</a></li>
+                    <li class="nav-item nav-button"><a href="pendaftaran.html" class="btn">Daftar</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero-gede">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>GUNUNG GEDE</h1>
+                <p>Salah Satu Gunung Favorit Pendaki di Jawa Barat</p>
+            </div>
+        </section>
+
+        <section class="section-padding info-section">
+            <div class="container">
+                <div class="info-container">
+                    <div class="info-text">
+                        <h2>Informasi & Peta Lokasi</h2>
+                        <p>Gunung Gede adalah sebuah gunung api stratovolcano yang terletak di Jawa Barat. Berada dalam ruang lingkup Taman Nasional Gede Pangrango, gunung ini adalah salah satu dari lima taman nasional pertama di Indonesia dan menjadi favorit para pendaki.</p>
+                        <ul class="spec-list">
+                            <li><i class="fas fa-mountain"></i>Ketinggian: 2.958 mdpl</li>
+                            <li><i class="fas fa-route"></i>Jalur Populer: Cibodas, Gunung Putri</li>
+                            <li><i class="fas fa-map-pin"></i>Lokasi: Kab. Bogor, Cianjur, Sukabumi</li>
+                        </ul>
+                    </div>
+                    <div class="info-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.93175323591!2d106.96963041923055!3d-6.700000067678501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69b6f0b2f69325%3A0x8fe79f3234b6b647!2sPuncak%2C%20Cianjur%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1689487461234!5m2!1sen!2sid4" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding">
+             <div class="container">
+                 <div class="section-title">
+                     <h2>Galeri <span>Foto</span></h2>
+                     <p>Geser untuk melihat keindahan Gunung Gede.</p>
+                 </div>
+                 <div id="gallery-root"></div>
+             </div>
+        </section>
+    </main>
+
+     <footer class="footer">
+        <div class="container"><div class="footer-container"><div class="footer-about"><h3>RB Adventure</h3><p>Menjelajahi keindahan alam Jawa Barat, satu langkah setiap saat. Bergabunglah dengan komunitas petualang kami.</p></div><div class="footer-col"><h4>Navigasi</h4><ul><li><a href="index.html">Home</a></li><li><a href="gunung-gede.html">Gunung Gede</a></li><li><a href="gunung-pangrango.html">Gunung Pangrango</a></li></ul></div><div class="footer-col"><h4>Bantuan</h4><ul><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">FAQ</a></li><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Kontak</a></li></ul></div><div class="footer-col"><h4>Ikuti Kami</h4><ul><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Instagram</a></li><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Facebook</a></li></ul></div></div><div class="footer-bottom"><p>© 2025 RB Adventure. All rights reserved.</p></div></div>
+    </footer>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+    <script type="text/babel">
+        const PhotoGallery = () => {
+            const photos = [
+                "https://www.gedepangrango.org/images/1024/7691127/DJI_0413.JPG",
+          "https://booking.gedepangrango.org/_next/static/media/gunung.078787fb.jpg",
+          "https://www.lidolakeresort.com/wp-content/uploads/2015/10/TNGGP-placeholder.jpg",
+          "https://www.lidolakeresort.com/wp-content/uploads/2015/05/Air-Terjun-di-TNGGP.jpg",
+          "https://sukabumihitz.com/wp-content/uploads/2024/06/Things-to-Do-in-Indonesia.jpeg",
+          "https://img.inews.co.id/media/1200/files/inews_new/2023/05/05/fakta_gunung_gede_pangrango.jpg"
+            ];
+            React.useEffect(() => {
+                new Swiper('.destination-gallery-swiper', {
+                    effect: 'slide', grabCursor: true, centeredSlides: true,
+                    slidesPerView: 'auto', loop: true, spaceBetween: 30,
+                    pagination: { el: '.swiper-pagination', clickable: true },
+                });
+            }, []);
+            return (
+                <div className="swiper-container destination-gallery-swiper">
+                    <div className="swiper-wrapper">
+                        {photos.map((photo, index) => (
+                            <div className="swiper-slide" key={index}><img src={photo} alt={`Galeri Gede ${index + 1}`} /></div>
+                        ))}
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>
+            );
+        };
+        const domContainer = document.querySelector('#gallery-root');
+        ReactDOM.createRoot(domContainer).render(<PhotoGallery />);
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Pendakian - Gunung Bogor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="nav-logo">RB Adventure</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Destinasi <i class="fas fa-chevron-down fa-xs"></i></a>
+                        <div class="dropdown-content">
+                            <a href="gunung-gede.html">Gunung Gede</a>
+                            <a href="gunung-pangrango.html">Gunung Pangrango</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="alat.html" class="nav-link">Alat</a></li>
+                    <li class="nav-item nav-button"><a href="pendaftaran.html" class="btn">Daftar</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="form-container">
+                    <div class="section-title">
+                        <h2>Formulir Pendaftaran <span>Pendakian</span></h2>
+                        <p>Lengkapi data di bawah ini untuk memulai petualangan Anda.</p>
+                    </div>
+
+                    <form id="pendaftaran-form">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama sesuai KTP" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ktp">Nomor KTP</label>
+                            <input type="text" id="ktp" name="ktp" placeholder="Masukkan 16 digit nomor KTP" required pattern="\d{16}" title="Nomor KTP harus 16 digit angka" />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telepon">Nomor Telepon</label>
+                            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gunung">Pilih Gunung</label>
+                            <select id="gunung" name="gunung" required>
+                                <option value="">-- Pilih Gunung --</option>
+                                <option value="gede">Gunung Gede</option>
+                                <option value="pangrango">Gunung Pangrango</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Pendakian</label>
+                            <input type="date" id="tanggal" name="tanggal" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="alamat">Alamat Lengkap</label>
+                            <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Kirim Pendaftaran</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer class="footer">
+        <div class="container"><div class="footer-container"><div class="footer-about"><h3>RB Adventure</h3><p>Menjelajahi keindahan alam Jawa Barat, satu langkah setiap saat. Bergabunglah dengan komunitas petualang kami.</p></div><div class="footer-col"><h4>Navigasi</h4><ul><li><a href="index.html">Home</a></li><li><a href="gunung-gede.html">Gunung Gede</a></li><li><a href="gunung-pangrango.html">Gunung Pangrango</a></li></ul></div><div class="footer-col"><h4>Bantuan</h4><ul><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">FAQ</a></li><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Kontak</a></li></ul></div><div class="footer-col"><h4>Ikuti Kami</h4><ul><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Instagram</a></li><li><a href="https://wiki.ambisius.com/gunung/gunung-pangrango" target="_blank">Facebook</a></li></ul></div></div><div class="footer-bottom"><p>© 2025 RB Adventure. All rights reserved.</p></div></div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
